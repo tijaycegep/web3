@@ -122,7 +122,7 @@
             echo "<h1>On affiche le formulaire </h1>";
         ?>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-                Nom : <input type="text" name="name" maxLength="15" value="<?php echo $name;?>"><br>
+                Nom : <input type="text" name="name" value="<?php echo $name;?>"><br>
                 <p style="color:red;"><?php echo $nomErreur; ?></p>
                 Mot de passe : <input type="password" name="password" value="<?php echo $password;?>"> <br>
                 <p style="color:red;"><?php echo $passwordErreur; ?></p>

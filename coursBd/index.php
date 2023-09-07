@@ -44,7 +44,7 @@
                                 <span><?php echo $row["name"]?> utilise le <?php echo $row["transport"]?><br>
                                 <?php echo $row["name"]?> est né le <?php echo $row["birthday"]?></span> 
                             </div>
-                            <button class="btn"><a href="modification.php">modificationne</a></button>
+                            <button class="btn"><a href="modification.php?id=<?php echo $row["id"] ?>">modificationne</a></button>
                         </div> 
                     </div>
                 <?php

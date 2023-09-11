@@ -9,6 +9,8 @@
 <body>
 <h1>ajoutage type beat</h1>
     <?php
+    $_SESSION["connexion"] = $_GET['test'];
+      if ($_SESSION["connexion"] == true) {
         $name = $password = $passwordconf = $email = $image = $birthday = $sex = $transport = "";
         $nomErreur = $passwordErreur = $emailErreur = $imageErreur = $sexError = $birthError = $transportError = "";
         $erreur = false;
@@ -161,6 +163,11 @@
             
             return $data;
         }
+
+    }
+    else {
+        header("Location: index.php");
+    }
 
     ?>
 </body>

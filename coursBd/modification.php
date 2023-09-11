@@ -9,6 +9,8 @@
 <body>
 <h1>mdofiage type beat</h1>
     <?php
+    $test = $_GET['']
+    if ($_SESSION["connexion"] == true) {
         $nomErreur = $passwordErreur = $emailErreur = $imageErreur = $sexError = $birthError = $transportError = "";
         $erreur = false;
         $id = $_GET['id'];
@@ -193,6 +195,11 @@
             
             return $data;
         }
+
+    }
+    else {
+        header("Location: index.php");
+    }
 
     ?>
 </body>
